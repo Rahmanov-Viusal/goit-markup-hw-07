@@ -1,0 +1,19 @@
+.section-occupation {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+.section-occupation__title {
+  margin-bottom: 50px;
+}
+.section-occupation__list {
+  display: flex;
+}
+
+&:last-child {
+  margin-right: 0px;
+}
+
+.section-occupation__item {
+  flex-basis: calc((100%-60px) / 3);
+  margin-right: 30px;
+}

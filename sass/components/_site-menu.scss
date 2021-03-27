@@ -1,0 +1,52 @@
+.site-menu {
+  display: flex;
+  margin-left: 93px;
+}
+.site-menu__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $nav-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: $bg-button-color;
+
+    transform: scaleX(1);
+  }
+
+  &.current {
+    color: $bg-button-color;
+  }
+  &.active {
+    color: $bg-button-color;
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      left: 0px;
+      bottom: -1px;
+
+      width: 100%;
+      height: 4px;
+
+      background-color: $bg-button-color;
+      border-radius: 2px;
+    }
+  }
+}
+
+.site-menu__list {
+  position: relative;
+
+  & + & {
+    margin-left: 50px;
+  }
+}
