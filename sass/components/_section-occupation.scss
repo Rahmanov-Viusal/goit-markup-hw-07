@@ -17,3 +17,29 @@
     margin-right: 0px;
   }
 }
+.section-occupation__box {
+  position: relative;
+}
+.section-occupation__wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 370px;
+  height: 70px;
+
+  background-color: $bg-work-content;
+}
+.section-occupation__text {
+  margin-top: 27px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $bg-main-page-color;
+}

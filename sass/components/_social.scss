@@ -1,0 +1,31 @@
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: $desc-text-color;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus-visible {
+    background-color: $bg-button-color;
+    color: $bg-main-page-color;
+  }
+}
+
+.social__icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}

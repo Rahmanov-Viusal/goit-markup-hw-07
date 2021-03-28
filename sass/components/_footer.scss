@@ -1,0 +1,103 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $bg-footer;
+}
+.footer-box {
+  display: flex;
+  align-items: baseline;
+}
+.contact-box__logo {
+  padding: 15px 0px 15px;
+
+  color: $bg-button-color;
+}
+.contact-box__text {
+  color: $button-color;
+}
+.contact-box__address {
+  margin-top: 20px;
+
+  color: $button-color;
+  text-decoration: none;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.contact-box__link {
+  color: $desc-text-color;
+  text-decoration: none;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contact-box__list {
+  display: block;
+  margin-top: 19px;
+}
+
+// ================social box=================
+.social-box {
+  margin-left: 85px;
+}
+.footer-social__list {
+  margin-top: 20px;
+}
+.social__item {
+  margin: 0px 5px 0px 5px;
+
+  &:nth-child(1) {
+    margin-left: 0;
+  }
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  color: $bg-main-page-color;
+  background-color: $bg-social-footer;
+}
+// =================mailing-box====================
+.mailing-box {
+  margin-left: auto;
+}
+.mailing-box__form {
+  display: flex;
+  margin-top: 20px;
+}
+.mailing-box__mail {
+  padding: 15px 16px;
+
+  width: 358px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  color: var(--mailing-text-pl);
+  background-color: transparent;
+}
+.mailing-box__button {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0px 0px 12px;
+  padding: 10px 26px;
+  min-width: 200px;
+}
+.mailing-box__mail::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: $mailing-text-pl;
+}
