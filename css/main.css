@@ -649,6 +649,12 @@ body {
           justify-content: center;
 }
 
+.social__icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
 .social__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -870,7 +876,7 @@ body {
   margin-right: 0;
 }
 
-.social__link {
+.social__link_dark {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
 }
