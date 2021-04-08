@@ -5,6 +5,8 @@
   background-color: $bg-footer;
 }
 .section-hero__overlay {
+  margin: 0 auto;
+
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -34,4 +36,20 @@
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .section-hero__overlay {
+    max-width: 1600px;
+  }
+  .section-hero__title {
+    max-width: 696px;
+
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
