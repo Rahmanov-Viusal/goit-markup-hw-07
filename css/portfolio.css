@@ -315,47 +315,28 @@ body {
 }
 
 .header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding: 16px 0;
 }
 
 .container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 2px solid red;
 }
 
 .name-company {
-  padding: 24px 0px 25px;
+  padding: 16px 0px 16px;
   color: #000000;
   font-family: Raleway;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
 .name-company__text {
   color: #2196f3;
   font-family: Raleway;
-}
-
-.site-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 93px;
 }
 
 .site-menu__link {
@@ -399,6 +380,7 @@ body {
 }
 
 .site-menu__list {
+  display: none;
   position: relative;
 }
 
@@ -406,18 +388,15 @@ body {
   margin-left: 50px;
 }
 
+@media screen and (max-width: 767px) {
+  .contact {
+    display: none;
+  }
+}
+
 .contact__icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .contact__list + .contact__list {
@@ -614,15 +593,6 @@ body {
   background-color: #2f303a;
 }
 
-.footer-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
 .contact-box__logo {
   padding: 15px 0px 15px;
   color: #2196f3;
@@ -658,10 +628,6 @@ body {
   margin-top: 19px;
 }
 
-.social-box {
-  margin-left: 85px;
-}
-
 .footer-social__list {
   margin-top: 20px;
 }
@@ -678,20 +644,12 @@ body {
   margin-right: 0;
 }
 
-.mailing-box {
-  margin-left: auto;
-}
-
 .mailing-box__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-top: 20px;
 }
 
 .mailing-box__mail {
   padding: 15px 16px;
-  width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;

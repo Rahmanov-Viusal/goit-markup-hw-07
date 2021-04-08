@@ -1,8 +1,9 @@
 .site-menu {
-  display: flex;
-  align-items: center;
-  margin-left: 93px;
+  // display: flex;
+  // align-items: center;
+  // margin-left: 93px;
 }
+
 .site-menu__link {
   display: block;
   padding-top: 32px;
@@ -45,6 +46,7 @@
 }
 
 .site-menu__list {
+  display: none;
   position: relative;
 
   & + & {

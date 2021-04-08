@@ -5,8 +5,13 @@
   background-color: $bg-footer;
 }
 .footer-box {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
+}
+.contact-box {
+  // @media screen and (max-width: 767px) {
+  //   text-align: center;
+  // }
 }
 .contact-box__logo {
   padding: 15px 0px 15px;
@@ -44,9 +49,13 @@
 }
 
 // ================social box=================
-.social-box {
-  margin-left: 85px;
-}
+// .social-box {
+//   margin-left: 85px;
+//   @media screen and (max-width: 767px) {
+//     text-align: center;
+//     margin-top: 60px;
+//   }
+// }
 .footer-social__list {
   margin-top: 20px;
 }
@@ -63,16 +72,20 @@
 
 // =================mailing-box====================
 .mailing-box {
-  margin-left: auto;
+  // margin-left: auto;
+  // @media screen and (max-width: 1599px) {
+  //   text-align: center;
+  //   margin-top: 60px;
+  // }
 }
 .mailing-box__form {
-  display: flex;
+  // display: flex;
   margin-top: 20px;
 }
 .mailing-box__mail {
   padding: 15px 16px;
 
-  width: 358px;
+  // width: 358px;
   height: 50px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -80,6 +93,16 @@
 
   color: var(--mailing-text-pl);
   background-color: transparent;
+
+  // @media screen and (max-width: 767px) {
+  //   width: 100%;
+  // }
+  // @media screen and (min-width: 768px) {
+  //   width: 450px;
+  // }
+  // @media screen and (max-width: 1599px) {
+  //   margin-bottom: 30px;
+  // }
 }
 .mailing-box__button {
   display: flex;
@@ -87,6 +110,10 @@
   margin: 0px 0px 0px 12px;
   padding: 10px 26px;
   min-width: 200px;
+
+  // @media screen and (max-width: 1599px) {
+  //   margin: auto;
+  // }
 }
 .mailing-box__mail::placeholder {
   font-style: normal;
