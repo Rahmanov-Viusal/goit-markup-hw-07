@@ -4,14 +4,11 @@
 
   background-color: $bg-footer;
 }
-.footer-box {
-  // display: flex;
-  // align-items: baseline;
-}
+
 .contact-box {
-  // @media screen and (max-width: 767px) {
-  //   text-align: center;
-  // }
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 .contact-box__logo {
   padding: 15px 0px 15px;
@@ -44,18 +41,16 @@
   letter-spacing: 0.02em;
 }
 .contact-box__list {
-  display: block;
   margin-top: 19px;
 }
 
 // ================social box=================
-// .social-box {
-//   margin-left: 85px;
-//   @media screen and (max-width: 767px) {
-//     text-align: center;
-//     margin-top: 60px;
-//   }
-// }
+.social-box {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-top: 60px;
+  }
+}
 .footer-social__list {
   margin-top: 20px;
 }
@@ -72,20 +67,20 @@
 
 // =================mailing-box====================
 .mailing-box {
-  // margin-left: auto;
-  // @media screen and (max-width: 1599px) {
-  //   text-align: center;
-  //   margin-top: 60px;
-  // }
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+
+    text-align: center;
+  }
 }
 .mailing-box__form {
-  // display: flex;
   margin-top: 20px;
 }
 .mailing-box__mail {
+  margin-bottom: 20px;
   padding: 15px 16px;
 
-  // width: 358px;
+  width: 100%;
   height: 50px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -93,27 +88,15 @@
 
   color: var(--mailing-text-pl);
   background-color: transparent;
-
-  // @media screen and (max-width: 767px) {
-  //   width: 100%;
-  // }
-  // @media screen and (min-width: 768px) {
-  //   width: 450px;
-  // }
-  // @media screen and (max-width: 1599px) {
-  //   margin-bottom: 30px;
-  // }
 }
 .mailing-box__button {
+  margin: 0 auto;
+
   display: flex;
   justify-content: space-between;
-  margin: 0px 0px 0px 12px;
+
   padding: 10px 26px;
   min-width: 200px;
-
-  // @media screen and (max-width: 1599px) {
-  //   margin: auto;
-  // }
 }
 .mailing-box__mail::placeholder {
   font-style: normal;
@@ -121,6 +104,43 @@
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-
   color: $mailing-text-pl;
+}
+@media screen and (min-width: 768px) {
+  .footer-box__flex {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .social-box {
+    margin-top: 0px;
+  }
+
+  .mailing-box__mail {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    display: flex;
+    align-items: baseline;
+  }
+  .mailing-box {
+    margin-left: auto;
+  }
+  .mailing-box__form {
+    display: flex;
+  }
+  .mailing-box__mail {
+    margin-right: 12px;
+    margin-bottom: 0px;
+
+    width: 358px;
+  }
+  .mailing-box__title {
+    text-align: start;
+  }
+  .social-box {
+    margin-left: 85px;
+  }
 }

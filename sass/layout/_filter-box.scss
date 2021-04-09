@@ -1,11 +1,11 @@
 .filter-box__list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  // justify-content: center;
 }
 .filter-box__item {
-  & + & {
-    margin-left: 8px;
-  }
+  margin-right: 8px;
+  margin-bottom: 15px;
 }
 .filter-box__button {
   border-color: transparent;
@@ -31,5 +31,18 @@
     background: $bg-button-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter-box__list {
+    justify-content: center;
+  }
+  .filter-box__item {
+    margin-bottom: 0px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
   }
 }

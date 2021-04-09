@@ -43,11 +43,11 @@
           </ul>
         </nav>
 
-
         <button class="burger-btn" type="button">
           <svg class="burger-btn__icon" width="40" height="40">
-          <use href="./img/sprite/symbol-defs.svg#icon-mobile_menu"></use>
-        </svg></button>
+            <use href="./img/sprite/symbol-defs.svg#icon-mobile_menu"></use>
+          </svg>
+        </button>
         <!--контакты-->
         <ul class="contact">
           <li class="contact__list">
@@ -60,7 +60,11 @@
           </li>
           <li class="contact__list">
             <a class="contact__link" href="tel:+380961111111">
-              <svg class="contact__icon contact__icon-phone" width="10" height="16">
+              <svg
+                class="contact__icon contact__icon-phone"
+                width="10"
+                height="16"
+              >
                 <use href="./img/sprite/symbol-defs.svg#icon-telephone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -142,7 +146,7 @@
         </div>
       </section>
       <!--Чем мы занимаемся-->
-      <!-- <section class="section-occupation">
+      <section class="section-occupation">
         <div class="container">
           <h2 class="section-title section-occupation__title">
             Чем мы занимаемся
@@ -195,18 +199,17 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--team-->
-      <!-- <section class="section-team">
+      <section class="section-team">
         <div class="container">
           <h2 class="section-title section-team__title">Наша команда</h2>
           <ul class="section-team__list">
             <li class="section-team__item">
               <img
-                src="./img/photo-team/img.jpg"
+                class="section-team__img"
+                src="./img/photo-team/desktop/team/Игорь_Демьяненко/img1x.jpg"
                 alt="Игорь Демьяненко"
-                width="270"
-                height="260"
               />
               <h3 class="section-team__name">Игорь Демьяненко</h3>
               <p class="section-team__text">Product Designer</p>
@@ -267,10 +270,9 @@
             </li>
             <li class="section-team__item">
               <img
-                src="./img/photo-team/img(1).jpg"
+                class="section-team__img"
+                src="./img/photo-team/desktop/team/Ольга_Репина/img-1_1x.jpg"
                 alt="Ольга Репина"
-                width="270"
-                height="260"
               />
               <h3 class="section-team__name">Ольга Репина</h3>
               <p class="section-team__text">Frontend Developer</p>
@@ -331,10 +333,9 @@
             </li>
             <li class="section-team__item">
               <img
-                src="./img/photo-team/img(2).jpg"
+                class="section-team__img"
+                src="./img/photo-team/desktop/team/Николай_Тарасов/img-2_1x.jpg"
                 alt="Николай Тарасов"
-                width="270"
-                height="260"
               />
               <h3 class="section-team__name">Николай Тарасов</h3>
               <p class="section-team__text">Marketing</p>
@@ -395,10 +396,9 @@
             </li>
             <li class="section-team__item">
               <img
-                src="./img/photo-team/img(3).jpg"
+                class="section-team__img"
+                src="./img/photo-team/desktop/team/Михаил_Ермаков/img-3_1x.jpg"
                 alt="Михаил Ермаков"
-                width="270"
-                height="260"
               />
               <h3 class="section-team__name">Михаил Ермаков</h3>
               <p class="section-team__text">UI Designer</p>
@@ -459,10 +459,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- section-customers -->
-      <!-- <section class="section-customers container">
+      <section class="section-customers container">
         <h2 class="section-title section-customers__title">
           Постоянные клиенты
         </h2>
@@ -511,90 +511,99 @@
           </li>
         </ul>
       </section>
-    </main> -->
+    </main>
     <!--подвал сайта-->
     <footer class="footer" id="contact">
       <div class="footer-box container">
-        <div class="contact-box">
-          <a class="contact-box__logo name-company" href="/index.html">
-            Web<span class="contact-box__text">Studio</span>
-          </a>
+        <div class="footer-box__flex">
+          <div class="contact-box">
+            <a class="contact-box__logo name-company" href="/index.html">
+              Web<span class="contact-box__text">Studio</span>
+            </a>
 
-          <address>
-            <ul class="contact-box__list">
-              <li class="contact-box__item">
+            <address>
+              <ul class="contact-box__list">
+                <li class="contact-box__item">
+                  <a
+                    class="contact-box__address"
+                    href="https://goo.gl/maps/zqndeF2HuT1xkgPQA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="contact-box__list">
+                  <a class="contact-box__link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contact-box__list">
+                  <a class="contact-box__link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <!-- соц сети подвал -->
+          <div class="social-box">
+            <b class="social-box__title footer-title">присоединяйтесь</b>
+            <ul class="social footer-social__list">
+              <li class="social__item">
                 <a
-                  class="contact-box__address"
-                  href="https://goo.gl/maps/zqndeF2HuT1xkgPQA"
+                  href="https://www.instagram.com/"
                   target="_blank"
                   rel="noopener noreferrer"
-                >
-                  г. Киев, пр-т Леси Украинки, 26</a
-                >
+                  class="social__link social__link--dark"
+                  ><svg class="social__icon">
+                    <use
+                      href="./img/sprite/symbol-defs.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contact-box__list">
-                <a class="contact-box__link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+              <li class="social__item">
+                <a
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social__link social__link--dark"
+                  ><svg class="social__icon twitter">
+                    <use href="./img/sprite/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contact-box__list">
-                <a class="contact-box__link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+              <li class="social__item">
+                <a
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social__link social__link--dark"
+                  ><svg class="social__icon">
+                    <use
+                      href="./img/sprite/symbol-defs.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social__link social__link--dark"
+                  ><svg class="social__icon">
+                    <use
+                      href="./img/sprite/symbol-defs.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <!-- соц сети подвал -->
-        <div class="social-box">
-          <b class="social-box__title footer-title">присоединяйтесь</b>
-          <ul class="social footer-social__list">
-            <li class="social__item">
-              <a
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="social__link social__link--dark"
-                ><svg class="social__icon">
-                  <use href="./img/sprite/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="social__link social__link--dark"
-                ><svg class="social__icon twitter">
-                  <use href="./img/sprite/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="social__link social__link--dark"
-                ><svg class="social__icon">
-                  <use href="./img/sprite/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="social__link social__link--dark"
-                ><svg class="social__icon">
-                  <use href="./img/sprite/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <!-- mailing-box -->
         <div class="mailing-box">
           <b class="mailing-box__title footer-title">Подпишитесь на рассылку</b>
@@ -625,8 +634,8 @@
         </button>
 
         <b class="modal-box__title">Оставьте свои данные, мы вам перезвоним</b> -->
-        <!-- form -->
-        <!-- <form class="modal-form">
+    <!-- form -->
+    <!-- <form class="modal-form">
           <label class="modal-form__marker"
             >Имя
             <span class="modal-form__wrapper">

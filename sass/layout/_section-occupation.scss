@@ -1,10 +1,8 @@
 .section-occupation {
-  @media screen and (max-width: 1170px) {
-    display: none;
-  }
-
   padding-top: 47px;
   padding-bottom: 94px;
+
+  display: none;
 }
 .section-occupation__title {
   margin-bottom: 50px;
@@ -14,12 +12,12 @@
 }
 
 .section-occupation__item {
-  // flex-basis: calc((100%-60px) / 3);
-  // margin-right: 30px;
+  flex-basis: calc((100%-60px) / 3);
+  margin-right: 30px;
 
-  // &:nth-child(3n) {
-  //   margin-right: 0px;
-  // }
+  &:nth-child(3n) {
+    margin-right: 0px;
+  }
 }
 .section-occupation__box {
   position: relative;
@@ -46,4 +44,9 @@
   text-transform: uppercase;
 
   color: $bg-main-page-color;
+}
+@media screen and (min-width: 1200px) {
+  .section-occupation {
+    display: block;
+  }
 }
